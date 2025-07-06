@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './App.css';
 
 const mockMovies = [
-  { title: 'Stranger Things', image: 'https://upload.wikimedia.org/wikipedia/pt/3/38/Stranger_Things_3.jpg' },
-  { title: 'La Casa de Papel', image: 'https://upload.wikimedia.org/wikipedia/pt/8/89/La_Casa_de_Papel.jpg' },
-  { title: 'The Witcher', image: 'https://upload.wikimedia.org/wikipedia/pt/9/9a/The_Witcher_2019.jpg' },
-  { title: 'Breaking Bad', image: 'https://upload.wikimedia.org/wikipedia/pt/6/61/Breaking_Bad_5%C2%AA_Temporada.jpg' },
-  { title: 'Bridgerton', image: 'https://upload.wikimedia.org/wikipedia/pt/6/6e/Bridgerton_2020.jpg' },
+  { title: 'Stranger Things', image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/pi8WsJtGKxuJHdp0m1W2wq7IvxW.jpg' },
+  { title: 'La Casa de Papel', image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/kIjuNTP6qYKsw0uRKc7EoBqFYbU.jpg' },
+  { title: 'The Witcher', image: 'https://image.tmdb.org/t/p/w500/7vjaCdMw15FEbXyLQTVa04URsPm.jpg' },
+  { title: 'Breaking Bad', image: 'https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg' },
+  { title: 'Bridgerton', image: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/olviL1bDh3UjK3Bao8Y7ypPqE7k.jpg' }
 ];
 
 function App() {
