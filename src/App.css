@@ -75,3 +75,33 @@ button:hover {
   font-size: 17px;
   letter-spacing: 1px;
 }
+
+.result-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  background: #222;
+  border-radius: 5px;
+  padding: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.result-item:hover {
+  box-shadow: 0 2px 12px #e5091444;
+}
+
+.result-item img {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 16px;
+  border: 2px solid #181818;
+  background: #111;
+}
+
+.result-item span {
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}

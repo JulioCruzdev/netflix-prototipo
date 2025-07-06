@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './App.css';
 
 const mockMovies = [
-  { title: 'Stranger Things' },
-  { title: 'La Casa de Papel' },
-  { title: 'The Witcher' },
-  { title: 'Breaking Bad' },
-  { title: 'Bridgerton' },
+  { title: 'Stranger Things', image: 'https://upload.wikimedia.org/wikipedia/pt/3/38/Stranger_Things_3.jpg' },
+  { title: 'La Casa de Papel', image: 'https://upload.wikimedia.org/wikipedia/pt/8/89/La_Casa_de_Papel.jpg' },
+  { title: 'The Witcher', image: 'https://upload.wikimedia.org/wikipedia/pt/9/9a/The_Witcher_2019.jpg' },
+  { title: 'Breaking Bad', image: 'https://upload.wikimedia.org/wikipedia/pt/6/61/Breaking_Bad_5%C2%AA_Temporada.jpg' },
+  { title: 'Bridgerton', image: 'https://upload.wikimedia.org/wikipedia/pt/6/6e/Bridgerton_2020.jpg' },
 ];
 
 function App() {
@@ -44,6 +44,9 @@ function App() {
           />
           <button type="submit">Entrar</button>
         </form>
+        <div style={{ marginTop: '32px', fontSize: '14px', color: '#aaa' }}>
+          DESENVOLVIDO POR: JULIO CRUZ - RU 4703089
+        </div>
       </div>
     );
   }
@@ -61,7 +64,12 @@ function App() {
       </div>
       <div className="results">
         {results.length > 0 ? (
-          results.map((movie, idx) => <div key={idx}>{movie.title}</div>)
+          results.map((movie, idx) => (
+            <div key={idx} className="result-item">
+              <img src={movie.image} alt={movie.title} />
+              <span>{movie.title}</span>
+            </div>
+          ))
         ) : (
           <div>Nenhum resultado encontrado.</div>
         )}
